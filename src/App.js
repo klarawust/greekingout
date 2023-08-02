@@ -1,17 +1,21 @@
-import "./App.css";
-import List from "./components/List";
-import Navbar from "./components/Navbar";
-
+// import Navbar from "./components/Navbar";
+import About from "../src/pages/About";
+import sol from "../src/images/sol.png";
 
 function App() {
-  const venner = ["Tale", "Aurora", "Frida", "Johanna"];
-  const bikkjer = ["Labradoodle", "Aurora", "Frida", "Johanna"];
   return (
-    <div>
-      <List entries={venner} title="Venner" />
-      <List entries={bikkjer} title="Bikkjene mine" />
-      <img src="meg.png" alt="meg"></img>
-      <Navbar />
+    <div className="flex flex-col mx-96 my-20">
+      <img
+        className="absolute w-2/5 right-10 z-0 top-5"
+        src={sol}
+        alt="solillustrasjon"
+      ></img>
+      <img
+        className="absolute w-1/5 left-20 z-0 bottom-10"
+        src={sol}
+        alt="solillustrasjon"
+      ></img>
+      <About />
     </div>
   );
 }

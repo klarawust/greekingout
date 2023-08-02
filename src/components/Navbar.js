@@ -1,15 +1,13 @@
-import { NavLink } from "components/NavLink.js";
+import { NavLink } from "./NavLink.js";
 
 function Navbar({ links }) {
   const navItems = [
     { label: "Hjem", url: "/" },
-    { label: "Prosjekter", url: "/" },
-    { label: "Bøker", url: "/" },
-    { label: "LinkedIn", url: "/" },
+    { label: "Om oss", url: "/" },
   ];
   return (
     <nav>
-      <ul>
+      <ul className="flex flex-row w-full justify-center gap-16 my-5">
         {navItems.map((navItem) => (
           <NavLink key={navItem.label} navItem={navItem} />
         ))}
