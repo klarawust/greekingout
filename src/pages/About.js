@@ -4,7 +4,7 @@ import img2 from "../images/festlig_1280.webp";
 function About({ links }) {
   return (
     <div className="flex flex-col gap-10 font-mono">
-      <h1 className="text-4xl text-orange-600 z-10">About us</h1>
+      <h1 className="text-4xl text-amber-500 z-10">About us</h1>
       <img className="w-96 -z-10" src={img1} alt="us three girls"></img>
       <p className="text-teal-700  z-10">
         We are three girls from the Oslo-area, who study Computer Science in
