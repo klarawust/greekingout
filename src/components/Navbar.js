@@ -7,7 +7,7 @@ function Navbar({ links }) {
   ];
   return (
     <nav>
-      <h1 className="text-6xl font-serif text-orange-500 m-10 text-center">
+      <h1 className="text-6xl font-serif text-orange-500 text-left">
         GreekingOut
       </h1>
       <ul className="flex flex-row w-full justify-center gap-16 my-5">

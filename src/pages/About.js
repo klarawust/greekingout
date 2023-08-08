@@ -6,7 +6,7 @@ function About({ links }) {
     <div className="flex flex-col gap-10 font-mono">
       <h1 className="text-4xl text-amber-500 z-10">About us</h1>
       <img className="w-96 -z-10" src={img1} alt="us three girls"></img>
-      <p className="text-teal-700  z-10">
+      <p className="text-teal-700 z-10">
         We are three girls from the Oslo-area, who study Computer Science in
         Trondheim. We are on our third year, and will finish our Bachelor-degree
         after our semester in Athens. We will be documenting some of the cool
