@@ -1,0 +1,48 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Title } from '../components/Title';
+import { Overview } from '../components/Overview';
+const posts = await Astro.glob('./blog/*.md');
+---
+
+
+<Layout title="About us">
+	<main class="m-20">
+		<Title/>
+		<div class="grid grid-cols-4">
+			<div class="cols-span-1 ml-12"><Overview posts={posts}/></div>
+		  	<div class="mb-10 cols-span-3 prose">
+			  	<img class="w-96 -z-10" src="/images/normal_1280.webp" alt="us three girls"></img>
+				<p class="z-10">
+			  We are three girls from the Oslo-area, who study Computer Science in
+			  Trondheim. We are on our third year, and will finish our Bachelor-degree
+			  after our semester in Athens. We will be documenting some of the cool
+			  things we experience in our 5 months in Greece!
+				</p>
+				<img class="w-96" src="/images/festlig_1280.webp" alt="us three girls partying"></img>
+				<p class="z-10">
+			  If you want to learn more about us, you can check out our personal
+			  websites or instagrams:{" "}
+			  <a href="https://www.helloklara.com">helloklara.com</a>,{" "}
+			  <a href="https://www.kennedy.com">kennedy.com</a> and{" "}
+			  <a href="https://www.instagram.com/taleeikenes">
+				instagram.com/taleeikenes
+			  </a>
+				</p>
+		  </div>
+		</div>
+			<img
+			  class="absolute w-2/5 right-10 z-0 top-5"
+			  src="/images/sol.png"
+			  alt="stor solillustrasjon"
+			></img>
+			<img
+			  class="absolute w-1/5 left-20 z-0 bottom-10"
+			  src="/images/sol.png"
+			  alt="liten solillustrasjon"
+			></img>
+	
+	</main>
+</Layout>
+
+
