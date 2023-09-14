@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro';
+import {Title} from '../components/Title'
+import {Overview} from '../components/Overview';
+const posts = await Astro.glob('./blog/*.md');
+---
+
+<Layout title="Greeking Out">
+	<main>
+		<Title/>
+		<div class="grid grid-cols-4" >
+			<div class="cols-span-1 ml-12"><Overview posts={posts}/></div>
+			<div class="cols-span-3">
+				<ul>
+					{posts.map((post) => (
+					  <li class="mb-12"><post.Content/></li>
+					))}
+				  </ul>
+			</div>
+		 <div class="flex flex-col mx-96 my-20">
+			<img
+			  class="absolute w-2/5 right-10 z-0 top-5"
+			  src="/images/sol.png"
+			  alt="stor solillustrasjon"
+			></img>
+			<img
+			  class="absolute w-1/5 left-20 z-0 bottom-10"
+			  src="/images/sol.png"
+			  alt="liten solillustrasjon"
+			></img>
+		  </div> 
+	</main>
+</Layout>
+
+
