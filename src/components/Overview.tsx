@@ -11,11 +11,14 @@ export const Overview = ({ posts }: OverviewProps) => {
         <a href="/about">About us</a>
       </li>
       <li className="font-bold">Blogposts</li>
-      {posts.map((post) => (
-        <li key={post.url}>
-          <a href={post.url}>{post.frontmatter.title}</a>{" "}
-        </li>
-      ))}
+      {posts
+        .slice()
+        .reverse()
+        .map((post) => (
+          <li key={post.url}>
+            <a href={post.url}>{post.frontmatter.title}</a>{" "}
+          </li>
+        ))}
     </ul>
   );
 };
