@@ -10,7 +10,9 @@ export const Overview = ({ posts }: OverviewProps) => {
       <li className="text-amber-500 mb-2">
         <a href="/about">About us</a>
       </li>
-      <li className="font-bold">Blogposts</li>
+      <li className="font-bold">
+        <a href="/">Blogposts</a>
+      </li>
       {posts
         .slice()
         .reverse()
