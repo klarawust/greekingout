@@ -10,8 +10,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/react": "^3.0.2",
-    "@astrojs/tailwind": "^5.0.0",
+    "@astrojs/react": "^2.2.1",
+    "@astrojs/tailwind": "^4.0.0",
     "@fontsource-variable/bodoni-moda": "^5.0.9",
     "@tailwindcss/typography": "^0.5.10",
     "@types/react": "^18.0.21",
