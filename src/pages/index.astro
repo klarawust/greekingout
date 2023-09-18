@@ -1,33 +1,41 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import {Title} from '../components/Title'
-import {Overview} from '../components/Overview';
-const posts = await Astro.glob('./blog/*.md');
+import Layout from "../layouts/Layout.astro";
+import { Title } from "../components/Title";
+import { Overview } from "../components/Overview";
+const posts = await Astro.glob("./blog/*.md");
 ---
 
 <Layout title="Greeking Out">
-	<main>
-		<Title/>
-		<div class="grid grid-cols-4" >
-			<div class="cols-span-1 ml-12"><Overview posts={posts}/></div>
-			<div class="cols-span-3">
-				<ul>
-					{posts.slice().reverse().map((post) => (
-					  <li class="my-12"><post.Content/></li>
-					))}
-				  </ul>
-			</div>
-			<img
-			  class="absolute w-2/5 right-10 z-0 top-5"
-			  src="/images/sol.png"
-			  alt="stor solillustrasjon"
-			></img>
-			<img
-			  class="absolute w-1/5 left-20 z-0 bottom-10"
-			  src="/images/sol.png"
-			  alt="liten solillustrasjon"
-			></img>
-	</main>
+  <main>
+    <Title />
+    <div class="grid md:grid-cols-3 grid-cols-1 lg:grid-cols-2">
+      <div class="hidden md:block cols-span-1 ml-2">
+        <Overview posts={posts} />
+      </div>
+      <div>
+        <ul>
+          {
+            posts
+              .slice()
+              .reverse()
+              .map((post) => (
+                <li class="my-12">
+                  <post.Content />
+                </li>
+              ))
+          }
+        </ul>
+      </div>
+      <img
+        class="absolute w-2/5 right-10 z-0 top-5"
+        src="/images/sol.png"
+        alt="stor solillustrasjon"
+      />
+    </div>
+    <img
+      class="absolute w-1/5 left-20 z-0 bottom-10"
+      src="/images/sol.png"
+      alt="liten solillustrasjon"
+    />
+  </main>
 </Layout>
-
-

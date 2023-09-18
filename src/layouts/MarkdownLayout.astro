@@ -1,31 +1,31 @@
 ---
-import { Title } from '../components/Title';
+import { Title } from "../components/Title";
 interface Props {
-	title: string;
-    frontmatter: {
-        title: String,
-        date: String
-    }
+  title: string;
+  frontmatter: {
+    title: String;
+    date: String;
+  };
 }
 
 const { title } = Astro.props;
 const { frontmatter } = Astro.props;
 ---
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body class="m-20">
-        <h1>{frontmatter.date}</h2>
-        <article class="prose">
-		    <slot />
-        </article>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="m-20">
+    <h1>{frontmatter.date}</h1>
+    <article class="prose">
+      <slot />
+    </article>
+  </body>
 </html>

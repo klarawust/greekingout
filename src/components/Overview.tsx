@@ -6,7 +6,7 @@ interface OverviewProps {
 
 export const Overview = ({ posts }: OverviewProps) => {
   return (
-    <ul className="ml-20 mt-12">
+    <ul className="ml-20 mt-12 sm:ml-0">
       <li className="text-amber-500 mb-2">
         <a href="/about">About us</a>
       </li>
