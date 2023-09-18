@@ -7,10 +7,10 @@ interface OverviewProps {
 export const Overview = ({ posts }: OverviewProps) => {
   return (
     <ul className="flex md:flex-col gap-2 mt-12 flex-row">
-      <p className="text-amber-500">
+      <p className="text-amber-500 hover:scale-105">
         <a href="/about">About us</a>
       </p>
-      <p className="font-bold">
+      <p className="font-bold hover:scale-105">
         <a href="/">Blogposts</a>
       </p>
       {posts
