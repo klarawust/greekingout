@@ -6,18 +6,18 @@ interface OverviewProps {
 
 export const Overview = ({ posts }: OverviewProps) => {
   return (
-    <ul className="ml-20 mt-12 sm:ml-0">
-      <li className="text-amber-500 mb-2">
+    <ul className="flex md:flex-col gap-2 mt-12 flex-row">
+      <p className="text-amber-500">
         <a href="/about">About us</a>
-      </li>
-      <li className="font-bold">
+      </p>
+      <p className="font-bold">
         <a href="/">Blogposts</a>
-      </li>
+      </p>
       {posts
         .slice()
         .reverse()
         .map((post) => (
-          <li key={post.url}>
+          <li className="hidden md:block" key={post.url}>
             <a href={post.url}>{post.frontmatter.title}</a>{" "}
           </li>
         ))}
