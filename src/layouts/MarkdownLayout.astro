@@ -5,6 +5,7 @@ interface Props {
   frontmatter: {
     title: String;
     date: String;
+    author: String;
   };
 }
 
@@ -23,9 +24,10 @@ const { frontmatter } = Astro.props;
     <title>{title}</title>
   </head>
   <body class="m-20">
-    <h1>{frontmatter.date}</h1>
+    <p>{frontmatter.date}</p>
     <article class="prose">
       <slot />
     </article>
+    <p>Author: {frontmatter.author}</p>
   </body>
 </html>

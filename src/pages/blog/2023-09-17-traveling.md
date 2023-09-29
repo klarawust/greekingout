@@ -2,6 +2,7 @@
 layout: ../../layouts/MarkdownLayout.astro
 title: Traveling
 date: 17.september
+author: Klara
 ---
 
 # Traveling through Europe
