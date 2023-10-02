@@ -8,7 +8,7 @@ const posts = await Astro.glob("./blog/*.md");
 <Layout title="Greeking Out">
   <main>
     <Title />
-    <div class="flex md:flex-row flex-col gap-4 md:gap-40 max-w-4xl">
+    <div class="flex md:flex-row flex-col gap-4 md:gap-40">
       <div>
         <Overview posts={posts} />
       </div>
