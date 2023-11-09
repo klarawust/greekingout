@@ -14,4 +14,4 @@ Berlin - Freiburg - Innsbruck - Ljubljana - Novalja - Zadar - Hvar - Dubrovnik -
 Our goal was to travel all the way from Berlin to Athens with busses and trains, but we had to give in after learning about the bad bus- and train-connections in southeast Europe (Albania and Greece).
 
 We are enjoying our journey very much, but are also very excited to get to Athens!
-![reise](./images/backpack.jpeg)
+![reise](/images/backpack.jpeg)

@@ -9,4 +9,4 @@ author: Aurora og Klara
 
 The girls visiting the Acropolis!! We learned about Virgin Athena and her olive trees, which we loved.
 
-![acropolis](./images/acropolis_1280.webp)
+![acropolis](/images/acropolis_1280.webp)
