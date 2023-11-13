@@ -7,7 +7,7 @@ author: Tale
 
 # A relaxing day at Lake Vouliagmeni
 
-We had an amazing, relaxing day at Lake Vouliagmeni. It took us about an hour with public transport from our home, which is pretty good. We also got to experience some fish spa (warning: feet pictures)😁🐟
+We had an amazing, relaxing day at Lake Vouliagmeni. It took us about an hour with public transport from our home, which is pretty good. We also got to experience some fish spa (warning: feet pic)😁🐟
 
 ![Lake Vuliagment](/images/lake_vouliagmeni.webp)
 ![Fish Spa](/images/fish_spa.webp)
